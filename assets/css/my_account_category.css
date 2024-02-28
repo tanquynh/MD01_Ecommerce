@@ -1,0 +1,27 @@
+
+.btn_common {
+    padding: 6px 20px;
+    border: none;
+    font-size: 15px;
+    color: #ffffff;
+    border-radius: 4px;
+}
+.btn_edit {
+    cursor: pointer;
+    background-color: rgb(150, 150, 230);
+}
+.btn_delete {
+    cursor: pointer;
+    background-color: rgb(218, 81, 92);
+}
+.btn_save {
+    cursor: pointer;
+    background-color: rgb(31, 12, 125);
+}
+.form_categoty {
+    row-gap: 0.2rem;
+}
+.table_content .tab_body .form_category,
+.table_content .tab_body input{
+    margin-bottom: 0.1rem;
+}

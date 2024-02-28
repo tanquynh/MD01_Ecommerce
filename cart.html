@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!--=============== FLATICON ===============-->
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" >
+    <!--=============== SWIPER CSS ===============-->
+        <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+        <title>Ecommerce Website</title>
+    </head>
+    <body>
+        <!--=============== HEADER ===============-->
+        <header class="header">
+            <div class="header_top">
+              <div class="header_container container">
+                    <div class="header_contact">
+                            <span>(+01) - 2345 - 6789</span>
+                            <span>Our lacation</span>
+                    </div>
+                    <p class="header_alert_news">
+                            Supper Value Deals - Save more with coupons
+                    </p>
+                    <a href="login.html" class="header_top-action">
+                        <i class="fa-regular fa-user"></i><span class = "users_login"> Login</span> 
+                    </a>
+              </div>
+            </div>
+      
+            <nav class="nav container">
+              <a href="home_index.html" class="nav_logo">
+                  <img src="assets/img/logo.svg" alt="" class="nav_logo-img">
+              </a>
+      
+              <div class="nav_menu" id="nav_menu">
+                  <ul class="nav_list">
+                      <li class="nav_item">
+                          <a href="home_index.html" class="nav_link active-link">Home</a>
+                      </li>
+      
+                      <li class="nav_item">
+                          <a href="shop1.html" class="nav_link">Shop</a>
+                      </li>
+                      <li class="nav_item">
+                          <a href="my_accounts.html" class="nav_link my_account_products_login">My Account</a>
+                      </li>
+                      <li class="nav_item">
+                          <a href="compares.html" class="nav_link">Compare</a>
+                      </li>
+                      <li class="nav_item">
+                          <a href="contact.html" class="nav_link">Contact</a>
+                      </li>
+                      <li class="nav_item">
+                        <a href="about.html" class="nav_link">About</a>
+                    </li>
+                  </ul>
+      
+                  <ul>
+                    <li class="nav_item sologan">
+                    <p class="nav_link">
+                        we only live once in life</p>
+                    </li> 
+                </ul>
+              </div>
+      
+              <div class="header_user-actions">
+                <a href="wishlists.html" class="header_action-btn">
+                    <img src="assets/img/icon-heart.svg" alt="">
+                    <span class = " wishlist">0</span>
+                </a>
+                <a href="cart.html" class="header_action-btn add_to_cart">
+                    <img src="assets/img/icon-cart.svg" alt="">
+                    <span class = "js_cart_quantily main_content"></span>
+                </a>
+              </div>
+            </nav>
+          </header>
+      
+          
+          </header>
+
+        <!--=============== MAIN ===============-->
+        <main class="main">
+        <!--=============== BREADCRUMB ===============-->
+            <section class="breadcrumb">
+                <ul class="breadcrumb_list container flex">
+                    <li><a href="home_index.html" class="breadcrumb_link">Home</a></li>
+                    <li><span class="breadcrumb_link">></span></li>
+                    <li><span class="breadcrumb_link">Shop</span></li>
+                    <li><span class="breadcrumb_link">></span></li>
+                    <li><span class="breadcrumb_link">Cart</span></li>
+                
+                </ul>
+            </section>
+        <!--=============== CART ===============-->
+            <section class="cart section_lg container">
+                <div class="table_container">
+                    <table class="table">
+                       <thead>
+                            <tr>
+                                <th>Image</th>
+                                <th>Name</th>
+                                <th>Price</th>
+                                <th>Quantity</th>
+                                <th>Subtotal</th>
+                                <th>Remove</th>
+                            </tr>
+                       </thead> 
+                       <tbody>
+                        <tr>
+                            <td><img src="assets/img/product-1-2.jpg" alt="" class="table_img"></td>
+                            <td><h3 class="table_title">J.Crew Mercantile Women's</h3>
+                                <p class="table_description">
+                                    Maboriosam in a tonto nesciung eget distingy magndapibus.
+                                </p>
+                            </td>
+                            <td><span class="table_price">$110</span></td>
+                            <td><input type="number" value="3" class="quantity"></td>
+                            <td><span class="table_subtotal">$220</span></td>
+                            <td><i class="fa-solid fa-square-minus "></i></td>
+                            
+                        </tr>
+                        <tr>
+                            <td><img src="assets/img/product-7-1.jpg" alt="" class="table_img"></td>
+                            <td><h3 class="table_title">J.Crew Mercantile Women's</h3>
+                                <p class="table_description">
+                                    Amazon Essential Women's Tank
+                                </p>
+                            </td>
+                            <td><span class="table_price">$110</span></td>
+                            <td><input type="number" value="3" class="quantity"></td>
+                            <td><span class="table_subtotal">$220</span></td>
+                            <td><i class="fa-solid fa-square-minus"></i></td>
+                            
+                        </tr>
+
+                        <tr>
+                            <td><img src="assets/img/product-2-1.jpg" alt="" class="table_img"></td>
+                            <td><h3 class="table_title">J.Crew Mercantile Women's</h3>
+                                <p class="table_description">
+                                   Amazon Brand - Daily Ritual Women's jersey
+                                </p>
+                            </td>
+                            <td><span class="table_price">$110</span></td>
+                            <td><input type="number" value="3" class="quantity"></td>
+                            <td><span class="table_subtotal">$220</span></td>
+                            <td><i class="fa-solid fa-square-minus"></i></td>
+                            
+                        </tr>
+                       </tbody>
+                        
+                    </table>
+                </div>
+
+                <div class="cart_actions">
+                    <a href="" class="btn flex btn_md">
+                        <i class="fa-solid fa-shuffle"></i> Update Cart
+                    </a>
+                    <a href="" class="btn flex btn_md">
+                        <i class="fa-solid fa-bag-shopping"></i> Continue Shoping
+                    </a>
+                </div>
+
+                <div class="divider">
+                    <i class="fa-solid fa-fingerprint"></i>
+                </div>
+
+                <div class="cart_group grid">
+                    <div>
+                        <div class="cart_shipping">
+                            <h3 class="section_title">Calculate Shipping</h3>
+                            <form action="" class="form grid form_calclate">
+                                <input type="text" class="form_input" placeholder="State / Country">
+                                <div class="form_group grid">
+                                    <input type="text" class="form_input"placeholder="City">
+                                    <input type="text" class="form_input"placeholder="PostCode / ZIP*">
+                                </div>
+                            </form>
+                            <div class="form_btn">
+                                <button class="btn flex btn_sm">
+                                    <i class="fa-solid fa-shuffle"></i> Update
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="cart_coupon">
+                            <h3 class="section_title">Apply Coupon</h3>
+                            <form action="" class="coupon_form form grid">
+                                <div class="form_group grid">
+                                    <input type="text" class="form_input" placeholder="Enter Your Coupon">
+                                    <div class="form_btn">
+                                        <button class="btn flex btn_sm">
+                                            <i class="fa-solid fa-tag"></i> Apply
+                                        </button>
+                                        
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="cart_total">
+                        <h3 class="section_title">Cart Totals</h3>
+                        <table class="cart_tatal_table">
+                            <tr>
+                                <td><span class="cart_total_title"></span>Cart Subtotal</td>
+                                <td><span class="cart_total_title"></span>$240.00</td>
+                            </tr>
+                            <tr>
+                                <td><span class="cart_total_price"></span>Shipping</td>
+                                <td><span class="cart_total_price"></span>$10.00</td>
+                            </tr>
+                            <tr>
+                                <td><span class="cart_total_title"></span>Total</td>
+                                <td><span class="cart_total_title"></span>$250.00</td>
+                            </tr>
+                        </table>
+                        <a href="check_out.html" class="btn flex btn_md">
+                            <i class="fa-solid fa-box"></i>Proceed To Checkout
+                        </a>
+                    </div>
+                
+                
+                
+                
+                
+                </div>
+            </section>
+
+        <!--=============== NEWSLETTER ===============-->
+            <section class="newsletter section home_newletter">
+                <div class="newsletter_container container grid">
+                    <h3 class="newsletter_title flex">
+                        <img src="assets/img/icon-email.svg" alt="" class="news_letter_icon">
+                        Sign up to Newsletter
+                    </h3>
+                    <p class="newsletter_description">
+                        ... and receive $25 coupon for first shopping.
+                    </p>
+                    <form action="" class="newsletter_form">
+                        <input type="text" class="newsletter_input" placeholder="Enter your email">
+                        <button type="submit" class="newsletter_btn">Subscribe</button>
+                    </form>
+
+                   
+                </div>
+            </section>
+        </main>
+
+        <!--=============== FOOTER ===============-->
+        <footer class="footer container">
+            <div class="footer_container grid">
+                <div class="footer_content">
+                    <a href="index1.html" class="footer_logo">
+                        <img src="assets/img/logo.svg" alt="" class="footer_logo_img">
+                    </a>
+                    <h4 class="footer_subtitler">Contact</h4>
+                    <p class="footer_description">
+                       <span>Address:</span> 362 To Huu Road, Street 32, Ha Noi 
+                    </p>
+                    <p class="footer_description">
+                        <span>Phone:</span> +84 123 456 789
+                     </p>
+                     <p class="footer_description">
+                        <span>Hour:</span> 10:00 - 18:00, mon - Sat 
+                     </p>
+                     <div class="footer_social">
+                        <h4 class="footer_subtitle">Follow Me</h4>
+                        <div class="footer_social_link flex">
+                            <a href="" class="footer_social_icon"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="" class="footer_social_icon"> <i class="fa-brands fa-twitter"></i></a>
+                            <a href="" class="footer_social_icon"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="" class="footer_social_icon"> <i class="fa-brands fa-pinterest"></i></a>
+                            <a href="" class="footer_social_icon"><i class="fa-brands fa-youtube"></i></a>
+                        </div>
+                        
+
+                       
+
+                     </div>
+                </div>
+    
+                <div class="footer_content">
+                    <h3 class="footer_tittle">
+                        Address
+                    </h3>
+                    <ul class="footer_link">
+                        <li><a href="" class="footer_link">About Us</a></li>
+                        <li><a href="" class="footer_link">Delivery Information</a></li>
+                        <li><a href="" class="footer_link">Privacy Policy</a></li>
+                        <li><a href="" class="footer_link">Terms & Conditions</a></li>
+                        <li><a href="" class="footer_link">Contact Us</a></li>
+                        <li><a href="" class="footer_link">Support Center</a></li>
+    
+                    </ul>
+                </div>
+    
+                <div class="footer_content">
+                    <h3 class="footer_tittle">
+                        My Account
+                    </h3>
+                    <ul class="footer_link">
+                        <li><a href="login.html" class="footer_link">Sign In</a></li>
+                        <li><a href="cart.html" class="footer_link">View Cart</a></li>
+                        <li><a href="wishlists.html" class="footer_link">My Wishlist</a></li>
+                        <li><a href="my_accounts.html" class="footer_link">Track My Order</a></li>
+                        <li><a href="" class="footer_link">help</a></li>
+                        <li><a href="" class="footer_link">Order</a></li>
+    
+                    </ul>
+                </div>
+    
+                <div class="footer_content">
+                    <h3 class="footer_title">Secured Payment Gateways</h3>
+                    <img src="assets/img/payment-method.png" alt="" class="payment_img">
+                </div>
+    
+    
+            </div>
+            <div class="footer_bottom">
+                <p class="copyright">&copy; 2023 Evara. All right reserved</p>
+                <span class="designer">Designed by Rikkei</span>
+            </div>
+        </footer> 
+
+        
+        <!--=============== SWIPER JS ===============-->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/home.js"></script>
+       
+        <script src="assets/js/cart.js"></script>
+        <script src="assets/js/shopCart.js"></script>
+        <script src="assets/js/checklogin.js"></script>
+    </body>
+</html>

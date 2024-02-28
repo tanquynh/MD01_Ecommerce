@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+   <!--=============== FLATICON ===============-->
+   <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" >
+<!--=============== SWIPER CSS ===============-->
+   <link
+   rel="stylesheet"
+   href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
+<!--=============== CSS ===============-->
+<link rel="stylesheet" href="assets/css/styles.css" />
+<link rel="stylesheet" href="assets/css/my_account_change_password.css" />
+<link rel="stylesheet" href="assets/css/my_acount_product.css" />
+<link rel="stylesheet" href="assets/css/my_account_category.css" />
+    <title>Ecommerce Website</title>
+  </head>
+  <body>
+    <!--=============== HEADER ===============-->
+    <header class="header">
+        <div class="header_top">
+          <div class="header_container container">
+                <div class="header_contact">
+                        <span>(+01) - 2345 - 6789</span>
+                        <span>Our lacation</span>
+                </div>
+                <p class="header_alert_news">
+                        Supper Value Deals - Save more with coupons
+                </p>
+                <a href="login.html" class="header_top-action">
+                    <i class="fa-regular fa-user"></i><span class = "users_login"> Login</span> 
+                </a>
+          </div>
+        </div>
+  
+        <nav class="nav container">
+          <a href="home_index.html" class="nav_logo">
+              <img src="assets/img/logo.svg" alt="" class="nav_logo-img">
+          </a>
+  
+          <div class="nav_menu" id="nav_menu">
+              <ul class="nav_list">
+                  <li class="nav_item">
+                      <a href="home_index.html" class="nav_link active-link">Home</a>
+                  </li>
+  
+                  <li class="nav_item">
+                      <a href="shop1.html" class="nav_link">Shop</a>
+                  </li>
+                  <li class="nav_item">
+                      <a href="my_accounts.html" class="nav_link">My Account</a>
+                  </li>
+                  <li class="nav_item">
+                      <a href="compares.html" class="nav_link">Compare</a>
+                  </li>
+                  <li class="nav_item">
+                      <a href="contact.html" class="nav_link">Contact</a>
+                  </li>
+                  <li class="nav_item">
+                    <a href="about.html" class="nav_link">About</a>
+                </li>
+              </ul>
+  
+              <ul>
+                <li class="nav_item sologan">
+                <p class="nav_link">
+                    we only live once in life</p>
+                </li> 
+            </ul>
+          </div>
+  
+          <div class="header_user-actions">
+            <a href="wishlists.html" class="header_action-btn">
+                <img src="assets/img/icon-heart.svg" alt="">
+                <span class = " wishlist">0</span>
+            </a>
+            <a href="cart.html" class="header_action-btn add_to_cart">
+                <img src="assets/img/icon-cart.svg" alt="">
+                <span class = "js_cart_quantily">0</span>
+            </a>
+          </div>
+        </nav>
+      </header>
+
+    <!--=============== MAIN ===============-->
+    <main class="main">
+      <!--=============== BREADCRUMB ===============-->
+      <section class="breadcrumb">
+        <ul class="breadcrumb_list container flex">
+            <li><a href="home_index.html" class="breadcrumb_link">Home</a></li>
+            <li><span class="breadcrumb_link">></span></li>
+            <li><span class="breadcrumb_link">Account</span></li>
+          
+        </ul>
+    </section>
+
+      <!--=============== ACCOUNTS ===============-->
+      <section class="accounts section_lg ">
+            <div class="accounts_container container grid">
+                <div class="account_tabs ">
+                    <p class="account_tab active-tab dashboard_myacount" data-target="#dashboard">
+                        <i class="fa-solid fa-sliders"></i> Dashboard
+                    </p>
+                    <p class="account_tab users_myacount" data-target="#users">
+                        <i class="fa-regular fa-user"></i> Users
+                    </p>
+                    <p class="account_tab" data-target="#orders">
+                        <i class="fa-solid fa-bag-shopping"></i> Orders
+                    </p>
+                    <p class="account_tab update_profile_myacount" data-target="#update_profile">
+                        <i class="fa-regular fa-calendar-days"></i> Category
+                    </p>
+                    <p class="account_tab" data-target="#address">
+                        <i class="fa-solid fa-location-pin"></i> My Address
+                    </p>
+                    <p class="account_tab" data-target="#change_password">
+                        <i class="fa-solid fa-file-invoice"></i> Account Details
+                    </p>
+                    <p class="account_tab logout" data-target="#logout">
+                        <a href="login.html"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
+                    </p>
+                </div>
+
+                <div class="tabs_content">
+                    <div class="table_content active-tab table_content_hide_table" content id="dashboard">
+                        <div class="content_my_acount_product">
+                            <h3 class="tab_header my_acount_Product">Products</h3>
+                                <button class="btn btn_md btn_show_hide_product" type="text">Show Product</button>
+                        </div>
+                        <div class="container_search_product hide_product_my_acount" type ="password">
+                            <form class="filter">
+                                <div class="item">
+                                    <label>category</label>
+                                    <select name="category" class="form_category_select form_category_select_search">
+                                        <option value="">---</option>
+                                    
+
+                                    </select>
+                                </div>
+                                <div class="item">
+                                    <label>Style</label>
+                                    <select name="Style">
+                                        <option value="">---</option>
+                                        <option value="Fearured">Fearured</option>
+                                        <option value="Popular">Popular</option>
+                                        <option value="new_added">new_added</option>
+                                        <option value="new_arrival">new_arrival</option>
+                                    </select>
+                                </div>
+                                <div class="item">
+                                    <label>Name</label>
+                                    <input name="name" type="text" class="nameInputMyAcount">
+                                </div>
+                                <div class="item">
+                                    <label>Min Price</label>
+                                    <input name="minPrice" type="number">
+                                </div>
+                                <div class="item">
+                                    <label>Max Price</label>
+                                    <input name="maxPrice" type="number">
+                                </div>
+                                <div class="item submit">
+                                    <button class="search_my_acount_product">Search</button>
+                                </div>
+                             
+                            </form>
+                          
+                            <div id="list">
+                                
+                            </div>
+                        </div>
+                        
+                       
+                        <form class="tab_body form grid form_my_account_product">
+                            <div  class=" form_group_change">
+                                <label for="" id="">Product's name *</label>
+                                <input type="text" placeholder="Product's name" class="form_input form_input_acc my_account_product name_products" >
+                                <div class="error_message"></div>
+                            </div>
+                            <div  class=" form_group_change">
+                                <label>Category </label>
+                                <select class="form_input form_input_acc my_account_product form_category_select1 " >
+                                    <!-- Đưa danh sách category vào -->
+                                   
+                                </select>
+                            </div>
+                            <div  class=" form_group_change"> 
+                                <label for="" id="">Price* </label>
+                                <input type="text" placeholder="Price" class=" form_input form_input_acc my_account_product price_products" >
+                                <div class="error_message"></div>
+                              
+                            </div>
+                            <div  class=" form_group_change">
+                                <label for="" id="">Image product1 * </label>
+                                <input type="text" placeholder="Image product" class=" form_input form_input_acc my_account_product image_products">
+                                <div class="error_message"></div>
+                               
+                            </div>
+                            <div  class=" form_group_change">
+                                <label for="" id="">Image product2 * </label>
+                                <input type="text" placeholder="Image product" class="form_input form_input_acc my_account_product image_two_products">
+                                <div class="error_message"></div>
+                               
+                            </div>
+                            <div  class=" form_group_change">
+                                <label for="" id="">Description *</label>
+                                <textarea class="description my_account_product"   name="" id="" cols="30" rows="5"></textarea>
+                                <div class="error_message"></div>
+                                
+                            </div>
+                            <div class="form-group-radio">
+                                <input type="radio" value="new_arrival" name="type_product" checked class="type_product">
+                                <label for="">New Arrival</label>
+                                <input type="radio" value="Fearured" name="type_product" class="type_product">
+                                <label for="">Fearured</label>
+                                <input type="radio" value="Popular" name="type_product" class="type_product">
+                                <label for="">Popular</label>
+                                <input type="radio" value="new_added" name="type_product"class="type_product">
+                                <label for="">New added</label>
+                            </div>
+                           
+                            <div class="form_btn">
+                                <button class="btn btn_md btn_save_products">Save</button>
+                               
+                            </div>
+                        </form>
+
+
+                        <table class="style_table">
+                            <thead>
+                                <tr>
+                                    <th>Name</td>
+                                    <td>New Price</td>
+                                    <td>Image</td>
+                                    <td>Type</td>
+                                    <td>Actions</td>
+                                </tr>
+                            </thead>
+                            <tbody class="product_table_show">
+                                
+                            </tbody>
+                        
+                        </table>
+                    </div>
+                    <div class="table_content " content id="users">
+                        <h3 class="tab_header">User List</h3>
+
+                        <form class="tab_body form grid form_my_account_user">
+                            <div  class=" form_group_change">
+                                <label for="" id="">User's name *</label>
+                                <input type="text" placeholder="User's name" class="form_input form_input_acc my_account_product my_account_name_users" >
+                                <div class="error_message"></div>
+                            </div>
+                            <div  class=" form_group_change"> 
+                                <label for="" id="">Email* </label>
+                                <input type="email" placeholder="Email" class=" form_input form_input_acc my_account_product my_account_email_users" >
+                                <div class="error_message"></div>
+                              
+                            </div>
+                            <div  class=" form_group_change">
+                                <label for="" id="">PassWord * </label>
+                                <input type="password" placeholder="password" class=" form_input form_input_acc my_account_product my_account_password_users">
+                                <div class="error_message"></div>
+                                <i class="fas fa-eye-slash toogle_password_users"></i>
+                               
+                            </div>
+                           
+                            <div class="form_btn">
+                                <button class="btn btn_md btn_change_users">Change</button>
+                            </div>
+                        </form>
+                        <div class="my_acount_title_product">
+                            <h2>Users List</h2>
+                        </div>
+                        <table class="style_table">
+                            <thead>
+                                <tr>
+                                    <th>Name</td>
+                                    <td>Email</td>
+                                    <td>Password</td>
+                                    <td>Actions</td>
+                                </tr>
+                            </thead>
+                            <tbody class="product_users_change">
+                                
+                            </tbody>
+                        
+                        </table>
+                    </div>
+                    <div class="table_content " content id="orders">
+                        <h3 class="tab_header">Your Orders</h3>
+                        <div class="tab_body">
+                            <table class="placed_order_table">
+                                <tr>
+                                    <th>Orders</th>
+                                    <th>Date</th>
+                                    <th>Status</th>
+                                    <th>Total</th>
+                                    <th>Action</th>
+                                </tr>
+                                <tr>
+                                    <td>#1234</td>
+                                    <td>July 27, 2023</td>
+                                    <td>Processing</td>
+                                    <td>$78.00 </td>
+                                    <td><a href="#" class="view_order">View</a></td>
+                                </tr>
+                                <tr>
+                                    <td>#2366</td>
+                                    <td>June 20, 2022</td>
+                                    <td>Completed</td>
+                                    <td>$99.00 </td>
+                                    <td><a href="#" class="view_order">View</a></td>
+                                </tr>
+                            </table>
+                        </div>
+                      
+                    </div>
+                    <div class="table_content " content id="update_profile">
+                        <h3 class="tab_header"> List Category</h3>
+                        <div class="tab_body">
+                            <label for="">Category</label>
+                            <form action="" class="form grid form_category">
+                                <input type="text" placeholder="Category" class="form_input form_input_acc category_name">
+                                <div class="error_message message_category"></div>
+                            </form>
+                            <form  class=" form grid form_category">
+                                <label for="" id="">Image  </label>
+                                <input type="text" placeholder="Image " class=" form_input form_input_acc category_img">
+                                <div class="error_message"></div>
+                               
+                            </form>
+                            <div class="form_btn_categoy">
+                                <button class="btn btn_md btn_category_save">Save</button>
+                            </div>
+                        </div>
+                        <h2>List Cotegory</h2>
+                        <table class="style_table style_category">
+                            <thead>
+                                <tr>
+                                    <th>Name</td>
+                                    <th>Image</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody class="product_table category_table">
+                                
+                            </tbody>
+                        </table>
+                      
+                    </div>
+                    <div class="table_content " content id="address">
+                        <h3 class="tab_header">Shipping Address</h3>
+                        <div class="tab_body">
+                            <address class="address">
+                                Roman Plaza <br> To Huu <br> Nam Tu Liem 
+                            </address>
+                            <p class="city">Ha Noi</p>
+                            <a href="" class="edit">Edit</a>
+                        </div>
+                      
+                    </div>
+
+                    <div class="table_content " content id="change_password">
+                        <h3 class="tab_header">Account Details</h3>
+
+                        <form class="tab_body form grid">
+                            <div  class=" form_group_change">
+                                <label for="" id="">Name *</label>
+                                <input type="text" placeholder="Enter your name" class="change_detail form_input form_input_acc input_change_name" >
+                                <div class="error_message"></div>
+                            </div>
+                            <div  class=" form_group_change">
+                                <label for="" id="">Email Address *</label>
+                                <input type="email" placeholder="Enter your email" class="change_detail form_input form_input_acc input_change_email" >
+                                <div class="error_message"></div>
+                              
+                            </div>
+                            <div  class=" form_group_change"> 
+                                <label for="" id="">Current Password * </label>
+                                <input type="password" placeholder="Current Password" class="current_Password form_input form_input_acc input_change_password" >
+                                <div class="error_message"></div>
+                                <i class="fas fa-eye-slash toogle_current_password"></i>
+                            </div>
+                            <div  class=" form_group_change">
+                                <label for="" id="">New Password * </label>
+                                <input type="password" placeholder="New Password" class="new_Password form_input form_input_acc input_change_password">
+                                <div class="error_message"></div>
+                                <i class="fas fa-eye-slash toogle_new_password"></i>
+                            </div>
+                            <div  class=" form_group_change">
+                                <label for="" id="">Confirm Password *</label>
+                                <input type="password" placeholder="Confirm Password" class="confirm_Password form_input form_input_acc input_change_password">
+                                <div class="error_message"></div>
+                                <i class="fas fa-eye-slash toogle_comfirm_password"></i>
+                            </div>
+                            <div class="form_btn">
+                                <button class="btn btn_md btn_change_password">Change</button>
+                               
+                            </div>
+                        </form>
+                      
+                    </div>
+                    </div>
+                  
+
+                </div> 
+                
+
+            </div>
+      </section>
+
+      <!--=============== NEWSLETTER ===============-->
+      <section class="newsletter section home_newletter">
+        <div class="newsletter_container container grid">
+            <h3 class="newsletter_title flex">
+                <img src="assets/img/icon-email.svg" alt="" class="news_letter_icon">
+                Sign up to Newsletter
+            </h3>
+            <p class="newsletter_description">
+                ... and receive $25 coupon for first shopping.
+            </p>
+            <form action="" class="newsletter_form">
+                <input type="text" class="newsletter_input" placeholder="Enter your email">
+                <button type="submit" class="newsletter_btn">Subscribe</button>
+            </form>
+
+           
+        </div>
+    </section>
+    </main>
+
+    <!--=============== FOOTER ===============-->
+    <footer class="footer container">
+        <div class="footer_container grid">
+            <div class="footer_content">
+                <a href="index1.html" class="footer_logo">
+                    <img src="assets/img/logo.svg" alt="" class="footer_logo_img">
+                </a>
+                <h4 class="footer_subtitler">Contact</h4>
+                <p class="footer_description">
+                   <span>Address:</span> 362 To Huu Road, Street 32, Ha Noi 
+                </p>
+                <p class="footer_description">
+                    <span>Phone:</span> +84 123 456 789
+                 </p>
+                 <p class="footer_description">
+                    <span>Hour:</span> 10:00 - 18:00, mon - Sat 
+                 </p>
+                 <div class="footer_social">
+                    <h4 class="footer_subtitle">Follow Me</h4>
+                    <div class="footer_social_link flex">
+                        <a href="" class="footer_social_icon"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="" class="footer_social_icon"> <i class="fa-brands fa-twitter"></i></a>
+                        <a href="" class="footer_social_icon"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="" class="footer_social_icon"> <i class="fa-brands fa-pinterest"></i></a>
+                        <a href="" class="footer_social_icon"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                    
+
+                 </div>
+            </div>
+
+            <div class="footer_content">
+                <h3 class="footer_tittle">
+                    Address
+                </h3>
+                <ul class="footer_link">
+                    <li><a href="" class="footer_link">About Us</a></li>
+                    <li><a href="" class="footer_link">Delivery Information</a></li>
+                    <li><a href="" class="footer_link">Privacy Policy</a></li>
+                    <li><a href="" class="footer_link">Terms & Conditions</a></li>
+                    <li><a href="" class="footer_link">Contact Us</a></li>
+                    <li><a href="" class="footer_link">Support Center</a></li>
+
+                </ul>
+            </div>
+
+            <div class="footer_content">
+                <h3 class="footer_tittle">
+                    My Account
+                </h3>
+                <ul class="footer_link">
+                    <li><a href="" class="footer_link">Sign In</a></li>
+                    <li><a href="" class="footer_link">View Cart</a></li>
+                    <li><a href="" class="footer_link">My Wishlist</a></li>
+                    <li><a href="" class="footer_link">Track My Order</a></li>
+                    <li><a href="" class="footer_link">help</a></li>
+                    <li><a href="" class="footer_link">Order</a></li>
+
+                </ul>
+            </div>
+
+            <div class="footer_content">
+                <h3 class="footer_title">Secured Payment Gateways</h3>
+                <img src="assets/img/payment-method.png" alt="" class="payment_img">
+            </div>
+
+
+        </div>
+        <div class="footer_bottom">
+            <p class="copyright">&copy; 2023 Evara. All right reserved</p>
+            <span class="designer">Designed by Rikkei</span>
+        </div>
+    </footer> 
+
+       <!--=============== SWIPER JS ===============-->
+       <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+       <!--=============== MAIN JS ===============-->
+       <script src="assets/js/main.js"></script>
+       <script src="assets/js/home.js"></script>
+       <script src="assets/js/logout.js"></script>
+
+       <script src="assets/js/my_account_products.js"></script>
+       <script src="assets/js/my_acount_category.js"></script>
+       <script src="assets/js/my_account_change_password.js"></script>
+       <script src="assets/js/my_acount_users.js"></script>
+       <script src="assets/fale_data/premision.js"></script>
+  </body>
+</html>

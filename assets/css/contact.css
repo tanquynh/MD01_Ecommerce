@@ -1,0 +1,125 @@
+#contact-details {
+    grid-template-columns: 2fr 3fr;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#contact-details .details  span,
+#form-details form span {
+    font-size: 0.75rem;
+}
+#contact-details .details  h2,
+#form-details form h2 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    padding: 1.25rem 0;
+}
+#contact-details .details  h3 {
+    font-size: 1rem;
+    padding-bottom: 1rem;
+}
+#contact-details .details  li {
+    list-style: none;
+    display: flex;
+    padding: 0.6rem 0;
+}
+#contact-details .details li i{
+   font-size: 1rem;
+   padding-right: 1.25rem;
+}
+#contact-details .details li p{
+    margin: 0;
+   font-size: 1rem;
+ }
+#contact-details .map {
+    height: 25rem;
+}
+#contact-details .map iframe {
+    width: 100%;
+    height: 100%;
+}
+#form-details {
+    display: flex;
+    justify-content: space-between;
+  
+    padding: 1rem;
+    border: 1px solid var( --border-color);
+}
+#form-details form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+#form-details form input,
+#form-details form textarea {
+    width: 100%;
+
+}
+#form-details form textarea{
+    border: 1px solid var( --border-color-alt);
+}
+#form-details .people {
+    width: 30%;
+    
+}
+#form-details .people .people_container{
+    padding-bottom: 1.5rem;
+    display: flex;
+    align-items: flex-start;
+}
+#form-details .people .people_container img {
+    width: 4rem;
+    height: 4rem;
+    object-fit: cover;
+    margin-right: 1rem;
+}
+
+#form-details .people .people_container p span {
+    display: block;
+    font-size: 1rem;
+    font-weight: var(--weight-600);
+    color: var(--first-color);
+}
+
+.error_message {
+    color: #dc3545;
+    font-style: italic;
+    margin-top: 3px;
+    /* text-decoration-line:underline */
+
+}
+.form_comment {
+    width: 100%;
+}
+.show_comment img {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1rem;
+}
+.show_comment{
+    padding-bottom: 1.5rem;
+    /* display: flex;
+    align-items: flex-start; */
+}
+.show_comment .name_contact {
+    width: 100%;
+    display: block;
+    font-size: 1rem;
+    font-weight: var(--weight-600);
+    color: var(--first-color);
+}
+.show_comment .comment {
+    margin-bottom: 1rem;
+    border-bottom: 1px solid var(--border-color-alt);
+}
+.comment_contact {
+    padding-bottom: 1.5rem;
+    display: flex;
+    align-items: flex-start;
+}
+.submit_comment {
+    margin: 1rem 0;
+}

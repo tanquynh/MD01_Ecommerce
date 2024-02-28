@@ -1,0 +1,150 @@
+.my_account_product {
+    width: 100%;
+}
+.description {
+    border: 1px solid var(--border-color-alt) ;
+}
+
+.form-group-radio {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.form-group-radio label {
+    margin-right:1rem;
+}
+
+.form-group-radio input {
+    width: 20px;
+    height: 20px;
+    margin-right: 4px;
+}
+
+.my_acount_title_product, .table_content h2 {
+    color: var(--first-color);
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+/* style table */
+.style_table {
+    width: 100%;
+    /* giúp các border không có khoảng trống */
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.style_table thead tr {
+    background-color: rgb(29, 206, 147);
+    color: #ffffff;
+}
+
+.style_table tr td {
+    padding:1rem;
+}
+
+.style_table tr {
+    border-bottom: 1px solid #ced4da;
+}
+
+/* // chọn hàng cuối trong body */
+.style_table tbody tr:last-child {
+    border-bottom: 2px solid rgb(29, 206, 147);
+}
+
+/* chọn hàng chẵn tr trong body cho background */
+.style_table tbody tr:nth-child(even) {
+    background-color: #eeebeb;
+}
+
+.style_table img {
+    width: 200px;
+    height: 100px;
+    object-fit: cover;
+}
+.content_my_acount_product {
+    display: flex;
+    justify-content: space-between;
+
+}
+.my_acount_Product {
+    width: 30%;
+    margin-bottom: 1rem;
+    background-color: var(--second-color);
+}
+.hide_product_my_acount {
+    display: none;
+}
+
+
+.container_search_product{
+    background-color: #E9E0F7;
+    width: 1000px;
+    max-width:  100%;
+    margin: 50px auto 0;
+    border-radius: 10px;
+}
+.filter{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 32.666% 32.666% 32.666%;
+    column-gap: 1%;
+    row-gap: 10px;
+}
+.filter .item{
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.filter .item select,
+.filter .item input,
+.filter .item button{
+    width: 100%;
+    padding: 5px;
+    border: none;
+    background-color: transparent;
+    border-left: 1px solid #ddd;
+    outline: none;
+}
+.filter .item label{
+    display: block;
+    width: 40%;
+    padding: 0 10px;
+}
+.filter .item.submit button{
+    background-color: #AA82ED;
+    color: #fff;
+}
+.countResults{
+    font-size: xx-large;
+    text-align: center;
+    padding: 20px;
+}
+#list{
+    padding: 20px;
+    display: grid;
+    column-gap: 1%;
+    grid-template-columns: 32.66% 32.66% 32.66%;
+    row-gap: 10px;
+}
+#list .item img{
+    width: 90%;
+    height:300px;
+    object-fit: cover;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+#list .item{
+    background-color: #fff5;
+    text-align: center;
+    border-radius: 10px;
+}
+#list .item .title{
+    font-weight: bold;
+}
+#list .item .price{
+    color: #F5B976;
+    letter-spacing: 1px;
+    padding: 20px;
+}

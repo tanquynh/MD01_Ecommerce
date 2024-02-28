@@ -1,0 +1,32 @@
+input.error {
+    border-color: #dc3545;
+}
+input.success {
+    border-color: #28a745;
+}
+.error_message {
+    color: #dc3545;
+    font-style: italic;
+    margin-top: 3px;
+    /* text-decoration-line:underline */
+}
+.form_group_password {
+    position: relative;
+}
+.form_group_password i {
+    position: absolute;
+    top: 50%;
+    right: 3%;
+    transform: translate(-50%, -50%);
+
+}
+.form_group_password i:hover {
+    cursor: pointer;
+}
+
+.form-group_error i {
+    top: calc(50% - 12px);
+}
+.input_register {
+    width: 100%;
+}
